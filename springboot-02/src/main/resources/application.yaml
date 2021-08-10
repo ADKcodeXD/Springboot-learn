@@ -10,3 +10,14 @@ person:
   dog:
     name: xiaobai
     age: 8
+server:
+  port: 8082
+spring:
+  profiles:
+    active: ssssss
+---
+server:
+  port: 8081
+spring:
+  profiles: ssssss
+---

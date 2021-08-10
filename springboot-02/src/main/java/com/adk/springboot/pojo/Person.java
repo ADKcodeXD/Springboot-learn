@@ -2,13 +2,17 @@ package com.adk.springboot.pojo;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
+import org.springframework.validation.annotation.Validated;
 
+import javax.validation.constraints.Email;
 import java.util.List;
 import java.util.Map;
 
 @Component
 @ConfigurationProperties(prefix = "person")
+@Validated
 public class Person {
+    @Email(message = "邮箱格式错误")
     private String name;
     private boolean happy;
     private Integer age;
