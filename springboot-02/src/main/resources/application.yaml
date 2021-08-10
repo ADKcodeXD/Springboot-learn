@@ -1,0 +1,12 @@
+person:
+  name: xxy
+  age: 18
+  happy: false
+  maps: {qisile: meiwenti,wocao: sb}
+  list:
+    - 苹果
+    - 雪梨
+    - 香蕉
+  dog:
+    name: xiaobai
+    age: 8
